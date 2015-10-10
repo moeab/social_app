@@ -53,7 +53,7 @@
 					</div>
 			<?php	}
 			} ?>
-			<form action=<?= "/messages/comment/{$user['user_id']}/{$message['id']}" ?> method="post">
+			<form action=<?= "/messages/comment/{$session['user_id']}/{$message['id']}/{$user['user_id']}" ?> method="post">
 				<textarea id="comment" name="comment" placeholder = "Write a comment..."></textarea>
 				<input class="btn-primary btn-sm" type="submit" value="post">
 			</form>

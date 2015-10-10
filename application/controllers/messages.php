@@ -7,10 +7,10 @@ class Messages extends CI_controller {
 		$values = array('message' => $input['message'], 'id' => $id, 'session' => $session['user_id']);
 		$this->message->new_message($values);
 	}
-	public function comment($user, $message_id){
+	public function comment($user, $message_id, $view_user){
 		$this->load->model('message');
 		$comment = $this->input->post('comment');
-		$this->message->comment($user, $message_id, $comment);
+		$this->message->comment($user, $message_id, $comment, $view_user);
 
 	}
 	public function delete_message($message_id, $view_user){

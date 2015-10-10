@@ -14,15 +14,15 @@ class Message extends CI_model {
 		$query = "SELECT message, messages.created_at, users.first_name, users.last_name, from_user, messages.id  FROM messages JOIN users ON from_user = users.id WHERE user_id = {$id}";
 		return $this->db->query($query)->result_array();
 	}
-	public function comment($user, $message_id, $comment){
+	public function comment($user, $message_id, $comment, $view_user){
 		$query = "INSERT INTO comments (user_id, message_id, comment, created_at, updated_at) VALUES (?, ? , ?, NOW(), NOW());";
 		$values = array($user, $message_id, $comment);
 		if (empty($comment)){
 			$this->session->set_flashdata('errors', '<p>Comment cannot be blank</p>');
-			redirect("/users/profile/{$user}");
+			redirect("/users/profile/{$view_user}");
 		} else {
 			$this->db->query($query, $values);
-			redirect("/users/profile/{$user}");
+			redirect("/users/profile/{$view_user}");
 		}
 	}
 	public function get_comments(){
