@@ -1,0 +1,165 @@
+* {
+	margin: 0 auto;
+}
+.nav {
+	border: 5px solid black;
+	padding: 20px;
+	margin: 2px;
+}
+.nav h1, .nav a, .nav p {
+	display: inline-block;
+	margin: 10px;
+}
+.nav p {
+	font-size: 20px;
+}
+.nav a {
+	float: right;
+}
+.hero-unit {
+	background: lightgray;
+	padding: 25px;
+	margin: 30px auto;
+	width: 70%;
+}
+.hero-unit p {
+	padding-bottom: 20px;
+}
+.col-md-4 {
+	padding: 60px;
+}
+.form {
+	background: none;
+	margin: 0 auto;
+	padding: 30px 30px 0px 400px;
+	display: inline-block;
+}
+.errors {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 120px;
+	width: 250px;
+	text-align: center;
+}
+.errors p {
+	color: red;
+	padding-bottom: 32px;
+}
+form label, form input {
+	display: block;
+}
+form select {
+	margin-bottom: 10px;
+	width: 200px;
+}
+form input {
+	margin-bottom: 10px;
+}
+th, tr td {
+	padding: 10px;
+}
+#dashboard_btn, #new-usr {
+	display: inline-block;
+}
+#dashboard_btn {
+	vertical-align: top;
+	margin-top: 60px;
+}
+.edit_form {
+	display: inline-block;
+	border: 2px solid black;
+	padding: 20px;
+	vertical-align: top;
+}
+.edit_form form {
+	margin: 10px auto;
+}
+#user_form {
+	margin-left: 310px;
+}
+.header h1, .header a {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.header h1 {
+	margin-left: 307px;
+}
+.header a {
+	margin-left: 415px;
+}
+.new_user {
+	display: inline-block;
+	margin-bottom: 50px;
+}
+h1.new_user {
+	margin-left: 30px;
+}
+a.new_user {
+	margin-left: 500px;
+}
+.profile {
+	display: inline-block;
+	margin: 20px 0px 0px 300px;
+}
+.profile p {
+	font-size: 20px;
+}
+.edit {
+	vertical-align: top;
+	display: inline-block;
+	margin: 40px 0px 0px 100px;
+}
+textarea, #message h4 {
+	width: 770px;
+	height: 100px;
+	border: 3px solid black;
+}
+#description, #description form, #messages, #messages form {
+	display: inline-block;
+}
+#description, #message h4 {
+	border: 1px solid black;
+}
+#description, #messages {
+	padding: 20px;
+	margin: 40px 0 30px 310px;
+}
+.success {
+	text-align: center;
+	color: green;
+}
+#message a, #message p {
+	display: inline-block;
+	margin: 0 auto;
+}
+#message p {
+	float: right;
+}
+#message h4 {
+	padding: 7px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+#message {
+	margin-top: 60px;
+}
+#comment {
+	border: 1px black solid;
+	width: 300px;
+	height: 50px;
+	padding: 5px;
+	overflow: auto;
+}
+.comments {
+	border: 1px gray dashed;
+	padding: 10px;
+	width: 400px;
+	overflow: auto;
+	margin: 0;
+	margin-bottom: 10px;
+}
+a.btn.btn-danger {
+	border-radius: 100px;
+	padding: 3px;
+	font-size: 10px;
+}
