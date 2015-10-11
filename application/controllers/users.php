@@ -4,7 +4,7 @@ class Users extends CI_Controller {
 	public function index()
 	{
 		if ($this->session->userdata('logged_in')){
-			redirect('/users/dashboard');
+			$this->dashboard();
 		} else {
 		$this->load->view('index');
 		}
@@ -17,9 +17,9 @@ class Users extends CI_Controller {
 		$this->load->model('user');
 		$this->user->register($input);
 		if (isset($input['register'])){
-			redirect('/users/sign_in');
+			$this->sign_in();
 		} else {
-			redirect('/users/dashboard');
+			$this->dashboard();
 		}
 	}
 	public function sign_in(){
@@ -30,7 +30,7 @@ class Users extends CI_Controller {
 		$this->load->model('user');
 		$verified = $this->user->sign_in($input);
 		$this->session->set_userdata('logged_in', $verified);
-		redirect('/users/dashboard');
+		$this->dashboard();
 	}
 	public function dashboard(){
 		$this->load->model('user');
