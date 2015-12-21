@@ -1,6 +1,6 @@
 <?php $this->load->view('partials/header') ?>
 <div class="nav">
-	<h1>Test App</h1>
+	<h1>Social App</h1>
 	<p>Registration</p>
 	<a class="btn-info btn-lg" href="/">Home</a>
 	<a class="btn-info btn-lg" href="/users/sign_in">Sign In</a>

@@ -1,7 +1,7 @@
 <?php $this->load->view("partials/header"); ?>
 <?php $session = $this->session->userdata('logged_in'); ?>
 <div class="nav">
-	<h1>Test App</h1>
+	<h1>Social App</h1>
 	<p>Dashboard</p>
 	<a class="btn-info btn-lg" href=<?php echo "/users/profile/" . $session['user_id'];?>>Profile</a>
 	<a class="btn-info btn-lg" href="/users/log_off">Log Off</a>
